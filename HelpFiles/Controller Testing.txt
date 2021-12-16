@@ -1,0 +1,10 @@
+With no power to the B+ and B- bus bars, but with the current sensor and throttle attached, turn on the 12v power 
+to the control board (red and black wires).  Put a volt meter positive lead on any one of GR1 .. GR10.  Put the 
+negative lead on PH1 or PH2.  It should be 0v.  Now, turn up the throttle very slowly.  The voltage should climb, 
+and then fall back to zero, and the LED should blink quickly.  
+
+If that happens, the control board is probably good, and then I would hook up a motor to the controller, and then 
+12v power to B+ and B-.  Make sure the B- of the 12v is isolated from the ground of the 12v battery you are using 
+to power the control board.  Also, make sure you are precharging the capacitor bank through a precharge resistor 
+before closing the contactor.  You won't have much speed control at 12v, but if the motor spins, then you are good 
+to go.

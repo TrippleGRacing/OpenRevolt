@@ -1,0 +1,61 @@
+Controller commands
+
+"save" - Saves the current settings on the chip
+"config" - Shows all the current variable settings.
+"idle" - shows what percent of the chip's computational ability is available.
+"restart" = reboots the chip
+"reset-ah" = resets the battery amp hours used.
+"kp" = The PI loop proportional constant.  For tuning to the motor. Careful with changing this.
+"ki" = The PI loop integral constant.  For tuning the motor. Be careful messing with this.
+"t-min-rc" = The raw minimum throttle. between 0 and 1023. Use this if you want to customise the controller to a different throttle pot.
+For example, if you are using a 5k pot, you would set this to about 413.  For a higher kOhm pot, this number would be LOWER.
+Usage:  
+t-min-rc 394
+save
+
+"t-max-rc" = The raw maximum throttle. between 0 and 1023.
+This should be around 700.  It represents "zero Ohms".
+Usage:
+t-max-rc 689
+save
+
+
+"t-fault-rc" = If the throttle reads below this, then throw a fault. between 0 and 1023.  It protects the controller if the throttle
+gets unplugged.  Anything below maybe 100 is good.  If the throttle gets unplugged, throttle will quickly fall to zero.
+Usage:
+t-fault-rc 100
+save
+
+"t-pos-gain" = Current control. Should throttle be current controlled, speed controlled, or a mixture of the 2? between 0 and 128.
+Usage:  
+t-pos-gain 16
+save
+
+"t-pwm-gain" = Speed control.  Should throttle be current controlled, speed controlled, or a mixture of the 2? between 0 and 128.
+Usage:
+t-pwm-gain 8
+save
+"c-rr" = Current ramp rate. between 0 and 100.
+Usage:
+c-rr 5
+save
+
+"rtd-period" = Start streaming at the given rate.  (in milliseconds). <= 32000
+Usage:
+rtd-period 100
+(that would stream the data 10 times per second.  To stop it, you have to type rtd-period 0)
+
+"pwm-filter" = How much should the pwm be filtered? <= 3
+This one is useless.
+
+"motor-os-th" = Motor overspeed threshold. <= 9999.
+"motor-os-ft" = Motor overspeed off time.  <= 9999. When the pwm shuts off due to overspeed, this sets the amount of off time.
+"motor-os-dt" = How long should the motor be spinning to fast before a fault? <= 99
+"pwm_deadzone" = How much pwm should there be before fets start to conduct? <= 99
+"motor-sc-amps" = motor current must be > motor_sc_amps to calculate motor speed. <= 500
+"bat-amps-lim" = How many battery amps should be allowed? <= 500
+Usage:
+bat-amps-lim 250
+save
+"pc-time" = precharge time.  <= 999.  In units of 10ths of a second.
+Don't use this one.

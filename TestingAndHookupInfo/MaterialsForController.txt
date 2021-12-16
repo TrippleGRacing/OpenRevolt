@@ -1,0 +1,24 @@
+500amp controller metals
+8” x 11” x 3/8” aluminum plate
+5/8” x 3/16” x 10” C110 copper bus bars (for B+ and B-).  Use power board for identifying hole locations.
+5/8” x 3/16” x 12” C110 copper bus bar (for M-).  Use power board for identifying hole locations.
+5/8” x 1/8” x 8” aluminum.  Use power board for identifying hole locations.
+3/4” x 8" x 1.5" aluminum.
+3/4" x 8" x 1/16" FR4.  (2 of these)
+shoulder washer x3:
+http://www.newegg.com/Product/Product.aspx?Item=9SIA0SD4TT4227&cm_re=shoulder_washer-_-0PS-00E5-001J9-_-Product
+
+silver conductive epoxy:
+https://www.amazon.com/Resist-Electrically-Conductive-Adhesive-AA-DUCT/dp/B00EPYD1YO/ref=sr_1_1?ie=UTF8&qid=1477057674&sr=8-1&keywords=AA-DUCT+906-2.5
+
+thermal grease:
+https://www.amazon.com/StarTech-com-Thermal-Compound-Heatsink-SILVGREASE1/dp/B00006B8DX/ref=sr_1_3?ie=UTF8&qid=1477057712&sr=8-3&keywords=thermal+grease
+
+end caps:  some lexan from home depot works well for the 2 ends of the controller.  Just glue them on.
+
+Note:  Use the power board for identifying hole locations in the metals.  See the assembly documentation here for knowing which power board holes go with which metals:
+http://www.paulandsabrinasevstuff.com/EVstuff%20info/Kit%20Assembly%20Directions%20Updated%20April,%202011.pdf
+
+I use onlinemetals.com for the metals. 
+
+

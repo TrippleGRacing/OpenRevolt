@@ -1,0 +1,109 @@
+Global Fault Output:
+	J1: fault signal.  0v means fault.  5v means All OK.
+	J2:  +5v.  In case 
+	J3:  ground
+
+Temperature Input #1:
+	J4:  Wire #1 from thermistor 
+	J5:  Wire #2 from thermistor
+	Note:  A 10k thermistor with a Beta of 3988 is assumed.
+
+Current Sensor #1:
+	J6: +5v
+	J7: ground
+	J8: Current Sensor Signal.  Assumed to be in [1.25v, 3.75v].  Anything outside of that will trip the hardware overcurrent.
+	Note:  Make sure the 3 wires are twisted together, or you are using shielded 3 wire cable.
+
+Current Sensor #2:
+	J9: +5v
+	J10: ground
+	J11: Current Sensor Signal.  Assumed to be in [1.25v, 3.75v].  Anything outside of that will trip the hardware overcurrent.
+	Note:  Make sure the 3 wires are twisted together, or you are using shielded 3 wire cable.
+
+Current Sensor #3:
+	J12: +5v
+	J13: ground
+	J14: Current Sensor Signal.  Assumed to be in [1.25v, 3.75v].  Anything outside of that will trip the hardware overcurrent.
+	Note:  Make sure the 3 wires are twisted together, or you are using shielded 3 wire cable.
+
+If using 2 wire potentiometer throttle:
+	Note:  If you are using a 2 wire pot, you will use J15 and J18 only.  In that case, R2 should be 1k and R1 should be 4.7k.
+	J15:  Throttle wire #1
+	J16:  Unused
+	J17:  Unused
+	J18:  Throttle wire #2
+
+If using 3 wire Hall Effect throttle:
+	If you are using a 3 wire hall effect throttle, which is the default for fully assembled boards/controllers, you will use J16, J17, and J18 only.
+	In that case, R2 should be left out, and R1 should be 47k.
+	J15:  Unused
+	J16:  +5v
+	J17:  ground
+	J18:  Throttle signal.  Typically in 0.5 to 4.5v.
+
+If using encoder (or a tach input):
+	J19:  A (0-5v)
+	J20:  B (0-5v)
+	J21:  +5v
+	J22:  ground
+
+brake input:
+	Note:  This is unsupported in software at this time.
+	J23:  brake signal (0-5v)
+	J24:  +5v
+	J25:  ground
+
+Temperature #2:
+	Note:  This temperature is precisely known since it goes to an analog input on the microcontroller.
+	J26:  Thermistor wire #1
+	J27:  Thermiator wire #2
+
+RS232 communications:
+	J28:  ground
+	J29:  TX
+	J30:  RX
+
+CANbus:
+	J31:  ground
+	J32:  CAN low
+	J33:  CAN high
+
+Power for the board:
+	J34:  +24v from an external power supply
+	J35:  ground from an external power supply
+
+Control of Precharge Relay and main Contactor coils:
+	J36:  Relay Coil +
+	J37:  +12v auxiliary power from off the board.
+	J38:  Contactor Coil +
+
+High Voltage DC monitoring:
+	HVGND: High voltage ground.  This comes straight from the main bus capacitors' ground.
+	HV:  High Voltage positive.  
+	Note:  The high voltage DC monitoring isn't used for anything at this time, so you can leave those unplugged if you want.
+
+Programming pins for dsPIC30F4011:
+	ISP:  You plug in the pickit 3 to this 6 pin connector to reprogram the chip.
+
+Programming pins for attiny25:
+	J41:  You plug in the programmer (such as avrisp mkii) here to program the attiny25 so that it oscillates, allowing the 6 isolated supplies to be generated.
+
+Desaturation protection for all 3 high side IGBTs:
+	J42:  High Voltage Capacitor +
+
+ON BOTTOM OF BOARD:
+	J43:  IGBT Half Bridge Gate 1H
+	J44:  IGBT Half Bridge Emitter 1H
+	J45:  IGBT Half Bridge Gate 1L
+	J46:  IGBT Half Bridge Emitter 1L
+	J47:  IGBT Half Bridge Gate 2H
+	J48:  IGBT Half Bridge Emitter 2H
+	J49:  IGBT Half Bridge Gate 2L
+	J50:  IGBT Half Bridge Emitter 2L
+	J51:  IGBT Half Bridge Gate 3H
+	J52:  IGBT Half Bridge Emitter 3H
+	J53:  IGBT Half Bridge Gate 3L
+	J54:  IGBT Half Bridge Emitter 3L
+	Note:  All you have to do is plug the board into the 3 IGBT half bridges, so you don't have to worry about wiring for J43-J54.
+
+Note:  There are test points on the board labeled GATE, 0V, +15v, -8.2v, GND, +5V, GND, +24V, PWM.  Those are not wiring points, just probe test points.

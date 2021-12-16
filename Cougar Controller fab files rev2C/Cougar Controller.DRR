@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: Cougar Controller.PCB   10-Jun-2009  22:04:44
+---------------------------------------------------------------------------
+
+
+
+Layer Pair : TopLayer to BottomLayer
+ASCII File : NCDrillOutput.TXT
+EIA File   : NCDrillOutput.DRL
+
+Tool         Hole Size          Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        32mil (0.8128mm)         142              52.83 Inch (1341.92 mm)
+T2        152mil (3.8608mm)        5                21.27 Inch (540.21 mm)
+T3        28mil (0.7112mm)         124              39.68 Inch (1007.83 mm)
+T4        40mil (1.016mm)          20               16.99 Inch (431.66 mm)
+T5        44mil (1.1176mm)         9                10.42 Inch (264.76 mm)
+T6        80mil (2.032mm)          2                9.70 Inch (246.49 mm)
+T7        68mil (1.7272mm)         5                5.26 Inch (133.57 mm)
+T8        36mil (0.9144mm)         2                5.56 Inch (141.24 mm)
+---------------------------------------------------------------------------
+Totals                             309              161.72 Inch (4107.69 mm)
+
+Total Processing Time : 00:00:00

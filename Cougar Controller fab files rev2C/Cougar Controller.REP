@@ -1,0 +1,306 @@
+*************************************************************
+FileName = Cougar Controller.GBR
+AutoAperture = True
+*************************************************************
+Generating : 
+      File : Cougar Controller.GTL
+
+    Adding Layer      : TopLayer
+
+    Adding Layer      : Mechanical4
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Cougar Controller.GBL
+
+    Adding Layer      : BottomLayer
+
+    Adding Layer      : Mechanical4
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Cougar Controller.GTO
+
+    Adding Layer      : TopOverlay
+
+    Adding Layer      : Mechanical4
+
+
+Used DCodes :
+    D11
+    D13
+    D16
+    D17
+    D18
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Cougar Controller.GTP
+
+    Adding Layer      : TopPaste
+
+    Adding Layer      : Mechanical4
+
+    Adding Layer      : TopLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D13
+    D16
+    D17
+    D18
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Cougar Controller.GBP
+
+    Adding Layer      : BottomPaste
+
+    Adding Layer      : Mechanical4
+
+    Adding Layer      : BottomLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D13
+    D16
+    D17
+    D18
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Cougar Controller.GTS
+
+    Adding Layer      : TopSolder
+
+    Adding Layer      : Mechanical4
+
+    Adding Layer      : TopLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D13
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D32
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Cougar Controller.GBS
+
+    Adding Layer      : BottomSolder
+
+    Adding Layer      : Mechanical4
+
+    Adding Layer      : BottomLayer
+
+    Adding Layer      : MultiLayer
+
+
+Used DCodes :
+    D13
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D32
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Cougar Controller.GKO
+
+    Adding Layer      : KeepOutLayer
+
+    Adding Layer      : Mechanical4
+
+
+Used DCodes :
+    D13
+    D16
+    D17
+    D18
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : 
+      File : Cougar Controller.GM4
+
+    Adding Layer      : Mechanical4
+
+
+Used DCodes :
+    D13
+    D16
+    D17
+    D18
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : Cougar Controller.GD1
+
+    Adding Layer      : Mechanical4
+
+    Adding Layer      : DrillDrawing
+
+    Adding Drill Pair : TopLayer-BottomLayer
+
+
+Used DCodes :
+    D13
+    D16
+    D17
+    D18
+    D19
+    D20
+    D55
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : Cougar Controller.GG1
+
+    Adding Layer      : DrillGuide
+
+    Adding Layer      : Mechanical4
+
+    Adding Drill Pair : TopLayer-BottomLayer
+
+
+Used DCodes :
+    D13
+    D16
+    D17
+    D18
+    D19
+    D20
+*************************************************************
+

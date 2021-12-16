@@ -1,0 +1,35 @@
+Battery Pack Plus ----------------------- CONTACTOR ------------------- FUSE -------------------- Controller B+ BUS BAR
+Battery Pack Minus --------------------- Controller B- Bus Bar
+Controller B+ BUS BAR ---------------- Motor 
+Controller M- Bus Bar -------------------- Motor
+Battery Pack Plus ------------------------- PRECHARGE RESISTOR ------------ on/off switch ------------Controller B+ Bus Bar
+
+Now, you need to make sure the precharge resistor on/off switch is off once you are done driving.  At least that's considered best practice.
+Here's how you hook up the control board:
+
+12v auxiliary battery PLUS ----------------- on/off switch ------------------- Red wire on J1 of the control board (bottom hole of J1).
+12v auxiliary battery MINUS ----------------------- Black wire on J1 of the control board (next up hole of J1).
+
+OPTIONAL YELLOW WIRE for contactor control (must enable this feature through the serial port if you want to use it):
+  Contactor 12v coil PLUS ----------------------- Yellow wire on J1 of the control board (3rd hole up on J1).
+
+The 2 wires from the 0-5k throttle POT go to the 2 brown wires on J1 of the control board (the top 2 holes of J1).  The order doesn't matter.
+
+TURN ON SEQUENCE:
+
+1. Turn on 12v power to control board and precharge resistor on/off switch.
+2. Wait for 0.08*R seconds, where R (in Ohms) is the precharge resistor you chose.  For example, if used a 100 Ohm resistor, you would have to wait 0.08*100 = 8 seconds.
+3. Flip switch to close main contactor.
+4. Drive away.
+
+TURN OFF SEQUENCE:
+
+1. Turn off main contactor switch (and make sure precharge resistor switch is off)
+2. Turn off 12v power to the control board.
+
+
+
+For a precharge resistor, some people like to use a rugged outdoor lightbulb.  It flashes while charging the caps, and then goes out.  It's a visual way to know
+that the capacitor bank is charged and holding its charge.  If it ever stayed on, "that would be bad" as Egon used to say on Ghost Busters.  Alternatively, you 
+can just use maybe four 10Watt resistors from Radio Shack all in parallel.  Or a tiny very large Ohm resistor.  Curtis recommends a 750 Ohm 1 Watt resistor, but you would
+have to wait 750*0.08 = A LONG TIME!

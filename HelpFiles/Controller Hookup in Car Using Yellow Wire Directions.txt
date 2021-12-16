@@ -1,0 +1,15 @@
+If you are using the built in precharge timer (yellow wire):
+
+Battery Pack Plus ----------------------- CONTACTOR ------------------- FUSE -------------------- Controller B+ BUS BAR
+Battery Pack Minus --------------------- Controller B- Bus Bar
+Controller B+ BUS BAR ---------------- Motor 
+Controller M- Bus Bar -------------------- Motor
+Battery Pack Plus ------------------------- PRECHARGE RESISTOR ------------ Relay ------------ Controller B+ Bus Bar
+
+Here's how you hook up the low voltage stuff:
+Yellow Wire --------------------- Relay Coil Plus
+12v auxiliary battery MINUS ---------------- Relay Coil MINUS
+12v auxiliary battery PLUS ----------------- Key Switch ------------------- Red wire on J1 of the control board (bottom hole of J1).
+12v auxiliary battery MINUS ----------------------- Black wire on J1 of the control board (next up hole of J1).
+
+The 2 wires from the 0-5k throttle POT go to the 2 brown wires on J1 of the control board (the top 2 holes of J1).  The order doesn't matter.

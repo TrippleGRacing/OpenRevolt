@@ -1,0 +1,26 @@
+Controller commands
+
+"save" - Saves the current settings on the chip
+"config" - Shows all the current variable settings.
+"idle" - Shows the data stream at a rate of whatever "rtd-period" is.
+"restart" = reboots the chip
+"reset-ah" = resets the battery amp hours used.
+"kp" = The PI loop proportional constant.  For tuning to the motor. Careful with changing this.
+"ki" = The PI loop integral constant.  For tuning the motor. Be careful messing with this.
+"t-min-rc" = The raw minimum throttle. between 0 and 1023. Use this if you want to customise the controller to a different throttle pot.
+
+"t-max-rc" = The raw maximum throttle. between 0 and 1023.
+"t-fault-rc" = If the throttle reads below this, then throw a fault. between 0 and 1023.
+
+"t-pos-gain" = Current control. Should throttle be current controlled, speed controlled, or a mixture of the 2? between 0 and 128.
+"t-pwm-gain" = Speed control.  Should throttle be current controlled, speed controlled, or a mixture of the 2? between 0 and 128.
+"c-rr" = Current ramp rate. between 0 and 100.
+"rtd-period" = Rate to display data when you type idle. <= 32000
+"pwm-filter" = How much should the pwm be filtered? <= 3
+"motor-os-th" = Motor overspeed threshold. <= 9999.
+"motor-os-ft" = Motor overspeed off time.  <= 9999. When the pwm shuts off due to overspeed, this sets the amount of off time.
+"motor-os-dt" = How long should the motor be spinning to fast before a fault? <= 99
+"pwm_deadzone" = How much pwm should there be before fets start to conduct? <= 99
+"motor-sc-amps" = motor current must be > motor_sc_amps to calculate motor speed. <= 500
+"bat-amps-lim" = How many battery amps should be allowed? <= 500
+"pc-time" = precharge time.  <= 999.  In units of 10ths of a second.
